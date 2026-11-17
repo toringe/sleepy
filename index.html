@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1a1530">
+<title>Sleepy</title>
+<style>html,body{background:#1a1530}</style>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<main id="unlock" class="screen center" hidden>
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true"></div>
+    <h1>Sleepy</h1>
+  </div>
+  <form id="unlock-form" class="unlock-form" autocomplete="on">
+    <input id="password" type="password" placeholder="Password" autocomplete="current-password"
+           autocapitalize="off" autocorrect="off" spellcheck="false" required>
+    <p id="unlock-error" class="form-error" role="alert"></p>
+    <button id="unlock-btn" class="btn-primary" type="submit">Unlock</button>
+  </form>
+</main>
+
+<main id="preparing" class="screen center" hidden>
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true"></div>
+    <h2>Preparing your sleep sessions…</h2>
+  </div>
+  <div class="progress"><i id="prep-bar"></i></div>
+  <p id="prep-text" class="muted"></p>
+  <p id="prep-error" class="form-error" role="alert"></p>
+  <button id="prep-retry" class="btn-primary" type="button" hidden>Try again</button>
+</main>
+
+<main id="library" class="screen" hidden>
+  <header class="lib-head">
+    <p id="greeting" class="muted"></p>
+    <h1>Sleepy</h1>
+  </header>
+  <section id="hero-slot"></section>
+  <div id="groups"></div>
+</main>
+
+<div id="sheet" class="sheet-layer" hidden>
+  <div class="sheet-dim" data-close></div>
+  <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="grab" aria-hidden="true"></div>
+    <div id="sheet-art" class="sheet-art"></div>
+    <h3 id="sheet-title"></h3>
+    <p id="sheet-desc" class="muted"></p>
+    <p class="seg-label">Sound</p>
+    <div id="sheet-seg" class="seg" role="radiogroup" aria-label="Sound"></div>
+    <button id="sheet-play" class="btn-primary" type="button">▶&#xFE0E;&nbsp; Play</button>
+  </section>
+</div>
+
+<section id="player" class="player-layer" hidden aria-label="Now playing"></section>
+<button id="nowbar" class="nowbar" type="button" hidden></button>
+
+<audio id="audio" preload="auto"></audio>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
