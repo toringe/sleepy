@@ -1,12 +1,12 @@
 // Sleepy service worker: keeps the app shell, catalog and covers available offline.
 // Audio is NOT cached here – decrypted tracks live in IndexedDB.
 // Bump VERSION on every app release so phones pick up the new files.
-const VERSION = 'sleepy-v2';
+const VERSION = 'sleepy-v4';
 const SHELL = [
   './', 'index.html', 'css/app.css', 'manifest.webmanifest',
   'js/app.js', 'js/catalog.js', 'js/crypto.js', 'js/player.js', 'js/player-view.js',
   'js/prefs.js', 'js/store.js', 'js/sync.js',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
+  'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'icons/logo.png',
 ];
 
 self.addEventListener('install', event => {
