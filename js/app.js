@@ -35,6 +35,8 @@ async function loadCatalog() {
     const json = await res.json();
     const c = parseCatalog(json);
     try { localStorage.setItem(CATALOG_COPY, JSON.stringify(json)); } catch { /* ignore */ }
+    // Warm the service-worker cache with every cover so sheet and player look right offline.
+    for (const s of c.sessions) for (const size of [600, 1200]) fetch(coverUrl(s, size)).catch(() => {});
     return c;
   } catch (e) {
     try {
