@@ -1,0 +1,88 @@
+{
+  "groups": [
+    {
+      "id": "falling-asleep",
+      "title": "Falling asleep"
+    },
+    {
+      "id": "back-to-sleep",
+      "title": "Back to sleep"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "journey",
+      "title": "Journey into Sleep",
+      "group": "falling-asleep",
+      "cover": "journey",
+      "sounds": [
+        {
+          "id": "voice",
+          "label": null,
+          "file": "audio/journey-voice.a4f948d4.enc",
+          "duration": 1806,
+          "bytes": 43658061
+        }
+      ]
+    },
+    {
+      "id": "soften",
+      "title": "Soften into Sleep",
+      "group": "falling-asleep",
+      "cover": "soften",
+      "sounds": [
+        {
+          "id": "music",
+          "label": null,
+          "file": "audio/soften-music.c2eec1b7.enc",
+          "duration": 1565,
+          "bytes": 37832463
+        }
+      ]
+    },
+    {
+      "id": "unwind",
+      "title": "Unwind into Sleep",
+      "group": "falling-asleep",
+      "cover": "unwind",
+      "sounds": [
+        {
+          "id": "music",
+          "label": "Music",
+          "file": "audio/unwind-music.1ecf2204.enc",
+          "duration": 1769,
+          "bytes": 42764012
+        },
+        {
+          "id": "rain",
+          "label": "Rain",
+          "file": "audio/unwind-rain.9c85d257.enc",
+          "duration": 1771,
+          "bytes": 42812150
+        }
+      ]
+    },
+    {
+      "id": "softly",
+      "title": "Softly Back to Sleep",
+      "group": "back-to-sleep",
+      "cover": "softly",
+      "sounds": [
+        {
+          "id": "music",
+          "label": "Music",
+          "file": "audio/softly-music.df42e975.enc",
+          "duration": 2180.5,
+          "bytes": 52711570
+        },
+        {
+          "id": "waves",
+          "label": "Waves",
+          "file": "audio/softly-waves.9cea11a4.enc",
+          "duration": 2129.9,
+          "bytes": 51487750
+        }
+      ]
+    }
+  ]
+}
