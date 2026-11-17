@@ -4,7 +4,7 @@ import { upsertSound, emptyCatalog } from '../tools/lib/catalog-edit.mjs';
 import { parseCatalog } from '../js/catalog.js';
 
 const entry = (o = {}) => ({
-  sessionId: 'unwind', title: 'Unwind into Sleep', group: 'falling-asleep', cover: 'unwind',
+  sessionId: 'unwind', title: 'Unwind the Day', group: 'falling-asleep', cover: 'unwind',
   soundId: 'music', label: 'Music', file: 'audio/unwind-music.11111111.enc', duration: 1769, bytes: 10, ...o,
 });
 
@@ -20,7 +20,7 @@ test('creates a new session in the given group', () => {
   assert.equal(replacedFile, null);
   assert.equal(catalog.sessions.length, 1);
   assert.deepEqual(catalog.sessions[0], {
-    id: 'unwind', title: 'Unwind into Sleep', group: 'falling-asleep', cover: 'unwind',
+    id: 'unwind', title: 'Unwind the Day', group: 'falling-asleep', cover: 'unwind',
     sounds: [{ id: 'music', label: 'Music', file: 'audio/unwind-music.11111111.enc', duration: 1769, bytes: 10 }],
   });
   parseCatalog(catalog);

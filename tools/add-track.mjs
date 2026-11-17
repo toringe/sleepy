@@ -1,6 +1,6 @@
 // Encrypts one audio file and adds (or replaces) it in catalog.json.
 //
-// node tools/add-track.mjs --session unwind --title "Unwind into Sleep" --group falling-asleep \
+// node tools/add-track.mjs --session unwind --title "Unwind the Day" --group falling-asleep \
 //   --sound rain --label Rain --audio "tmp/normalized/Unwind into Sleep with Rain.m4a" \
 //   --cover "tmp/covers/Unwind into Sleep.jpg"
 //

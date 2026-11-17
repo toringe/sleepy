@@ -35,9 +35,9 @@ node tools/add-track.mjs --session drift --title "Drift into Sleep" --group fall
 A session with **several** sounds – run once per sound, with a `--label` for each:
 
 ```sh
-node tools/add-track.mjs --session unwind --title "Unwind into Sleep" --group falling-asleep \
+node tools/add-track.mjs --session unwind --title "Unwind the Day" --group falling-asleep \
   --sound rain --label Rain --audio "path/to/Unwind with Rain.m4a" --cover "path/to/cover.jpg"
-node tools/add-track.mjs --session unwind --title "Unwind into Sleep" --group falling-asleep \
+node tools/add-track.mjs --session unwind --title "Unwind the Day" --group falling-asleep \
   --sound music --label Music --audio "path/to/Unwind with Music.m4a"
 ```
 

@@ -12,7 +12,7 @@
   "sessions": [
     {
       "id": "journey",
-      "title": "Journey into Sleep",
+      "title": "Journey to Sleep",
       "group": "falling-asleep",
       "cover": "journey",
       "sounds": [
@@ -27,7 +27,7 @@
     },
     {
       "id": "soften",
-      "title": "Soften into Sleep",
+      "title": "Soften the Body",
       "group": "falling-asleep",
       "cover": "soften",
       "sounds": [
@@ -42,7 +42,7 @@
     },
     {
       "id": "unwind",
-      "title": "Unwind into Sleep",
+      "title": "Unwind the Day",
       "group": "falling-asleep",
       "cover": "unwind",
       "sounds": [
@@ -64,7 +64,7 @@
     },
     {
       "id": "softly",
-      "title": "Softly Back to Sleep",
+      "title": "Finding Sleep Again",
       "group": "back-to-sleep",
       "cover": "softly",
       "sounds": [
