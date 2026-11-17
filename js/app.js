@@ -112,6 +112,7 @@ const sessionReady = session => session.sounds.some(isReady);
 
 function renderLibrary() {
   if (!app.catalog) return;
+  app.player?.prepare([...app.stored]).catch(() => {});
   $('greeting').textContent = greeting(new Date());
 
   const last = resolveLastPlayed(app.catalog, app.prefs);
