@@ -2,7 +2,7 @@
 //
 // node tools/add-track.mjs --session unwind --title "Unwind the Day" --group falling-asleep \
 //   --sound rain --label Rain --audio "tmp/normalized/Unwind into Sleep with Rain.m4a" \
-//   --cover "tmp/covers/Unwind into Sleep.jpg"
+//   --cover "tmp/covers/Unwind the Day.jpg"
 //
 // --label is shown on the sound switch; leave it out for sessions with only one sound.
 // --cover is needed the first time a session is added (writes covers/<session>-600.jpg and -1200.jpg).

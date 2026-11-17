@@ -70,10 +70,10 @@ A personal sleep-audio app for iPhone and Android. The owner (main user) and a f
 
 | Group | Session | Sounds (file in `tmp/normalized/`) | Cover |
 |---|---|---|---|
-| Falling asleep | Journey to Sleep | – (Journey into Sleep) 30:06 | Journey into Sleep.jpg |
-| Falling asleep | Soften the Body | Music (Soften into Sleep with Music) 26:05 | Soften into Sleep.jpg |
-| Falling asleep | Unwind the Day | Music 29:29 · Rain 29:31 | Unwind into Sleep.jpg |
-| Back to sleep | Finding Sleep Again | Music 36:20 · Waves 35:30 | Softly Back to Sleep.jpg |
+| Falling asleep | Journey to Sleep | – (Journey into Sleep) 30:06 | Journey to Sleep.jpg |
+| Falling asleep | Soften the Body | Music (Soften into Sleep with Music) 26:05 | Soften the Body.jpg |
+| Falling asleep | Unwind the Day | Music 29:29 · Rain 29:31 | Unwind the Day.jpg |
+| Back to sleep | Finding Sleep Again | Music 36:20 · Waves 35:30 | Finding Sleep Again.jpg |
 
 Audio source: the −20 LUFS versions in `tmp/normalized/` (AAC 192 kbps, faststart). A session with one sound shows no sound label and skips the sheet.
 
