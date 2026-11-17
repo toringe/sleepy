@@ -1,4 +1,9 @@
-<p align="center"><img src="icons/logo.png" alt="Sleepy" width="200"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="icons/logo.png" width="200">
+    <img src="icons/logo-on-dark.png" alt="Sleepy" width="240">
+  </picture>
+</p>
 
 # Sleepy
 
