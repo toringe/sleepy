@@ -1,3 +1,5 @@
+<p align="center"><img src="icons/logo.png" alt="Sleepy" width="200"></p>
+
 # Sleepy
 
 A small, private sleep-audio app for iPhone and Android. Open it in bed, tap a session, lock the phone and drift off. It works fully offline once it has been unlocked, and it costs nothing to run: it is a web app (PWA) hosted on GitHub Pages.
