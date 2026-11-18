@@ -81,7 +81,15 @@ h1, h2, h3, p { margin: 0; }
 #prep-text { text-align: center; }
 
 /* ---------- library ---------- */
-#library { padding-bottom: calc(var(--safe-bottom) + 110px); }
+/* The library scrolls inside its own full-screen box so the scroll indicator can be hidden
+   (iOS ignores scrollbar hiding on the page itself). */
+#library {
+  position: fixed; inset: 0;
+  overflow-y: auto; overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  padding-bottom: calc(var(--safe-bottom) + 110px);
+}
+#library::-webkit-scrollbar { display: none; }
 .lib-head { text-align: center; margin-bottom: 6px; }
 .lib-head .logo { display: block; width: 92px; height: auto; margin: 0 auto 4px; }
 .cover { background-size: cover; background-position: center; position: relative; }

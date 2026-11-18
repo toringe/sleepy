@@ -1,7 +1,7 @@
 // Sleepy service worker: keeps the app shell, catalog and covers available offline.
 // Audio is NOT cached here – decrypted tracks live in IndexedDB.
 // Bump VERSION on every app release so phones pick up the new files.
-const VERSION = 'sleepy-v5';
+const VERSION = 'sleepy-v6';
 const SHELL = [
   './', 'index.html', 'css/app.css', 'manifest.webmanifest',
   'js/app.js', 'js/catalog.js', 'js/crypto.js', 'js/player.js', 'js/player-view.js',
@@ -10,7 +10,9 @@ const SHELL = [
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  // cache: 'reload' bypasses the browser's HTTP cache, so a new version never stores stale files.
+  const fresh = SHELL.map(u => new Request(u, { cache: 'reload' }));
+  event.waitUntil(caches.open(VERSION).then(c => c.addAll(fresh)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', event => {
@@ -53,7 +55,7 @@ async function cacheFirst(req) {
   const hit = await cache.match(req, { ignoreSearch: true });
   if (hit) return hit;
   try {
-    const res = await fetch(req);
+    const res = await fetch(req, { cache: 'no-cache' });
     if (res.ok) cache.put(req, res.clone());
     return res;
   } catch (e) {
