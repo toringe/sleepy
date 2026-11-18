@@ -1,7 +1,7 @@
 // Sleepy service worker: keeps the app shell, catalog and covers available offline.
 // Audio is NOT cached here – decrypted tracks live in IndexedDB.
 // Bump VERSION on every app release so phones pick up the new files.
-const VERSION = 'sleepy-v4';
+const VERSION = 'sleepy-v5';
 const SHELL = [
   './', 'index.html', 'css/app.css', 'manifest.webmanifest',
   'js/app.js', 'js/catalog.js', 'js/crypto.js', 'js/player.js', 'js/player-view.js',

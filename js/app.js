@@ -132,12 +132,10 @@ function renderLibrary() {
       <div class="grid">
         ${sessions.map(s => {
           const ready = sessionReady(s);
-          const chips = s.sounds.length > 1
-            ? `<div class="chips">${s.sounds.map(x => `<span class="chip">${esc(x.label || x.id)}</span>`).join('')}</div>` : '';
           const prep = ready ? '' : '<div class="chips"><span class="chip">Preparing…</span></div>';
           return `<button class="tile cover shade dim-img${ready ? '' : ' preparing'}" data-session="${esc(s.id)}"
                     ${ready ? '' : 'aria-disabled="true"'} style="background-image:url('${coverUrl(s)}')">
-                    <div>${esc(s.title)}<div class="meta">${esc(sessionLength(s))}</div>${chips}${prep}</div>
+                    <div>${esc(s.title)}<div class="meta">${esc(sessionLength(s))}</div>${prep}</div>
                   </button>`;
         }).join('')}
       </div>

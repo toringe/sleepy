@@ -55,7 +55,7 @@
         },
         {
           "id": "rain",
-          "label": "Rain",
+          "label": "Effect",
           "file": "audio/unwind-rain.9c85d257.enc",
           "duration": 1771,
           "bytes": 42812150
@@ -77,7 +77,7 @@
         },
         {
           "id": "waves",
-          "label": "Waves",
+          "label": "Effect",
           "file": "audio/softly-waves.9cea11a4.enc",
           "duration": 2129.9,
           "bytes": 51487750
